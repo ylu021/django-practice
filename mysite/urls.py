@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from django.views import generic
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$',
+        generic.TemplateView.as_view(template_name='view1.html') #im giving a view1.html as the default page for home
+    )
 ]
