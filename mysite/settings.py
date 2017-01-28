@@ -30,6 +30,10 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'mysite/static'), #project's static folder 
+]
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
