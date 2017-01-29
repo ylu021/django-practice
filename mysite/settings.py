@@ -35,6 +35,7 @@ STATICFILES_DIRS = [
 ]
 
 INSTALLED_APPS = [
+    'polls.apps.PollsConfig', #the PollsConfig class is in polls/apps.py
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
