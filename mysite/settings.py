@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'mysite/static'), #project's static folder 
+    os.path.join(BASE_DIR, 'mysite/static'), #project's static folder
 ]
 
 INSTALLED_APPS = [
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
